@@ -10,6 +10,7 @@ import com.embarkx.todo.entities.Task;
 import com.embarkx.todo.services.TaskService;
 
 @Controller
+// @RequestMapping("/tasks")
 public class TaskController {
 
     public final TaskService taskService; 
