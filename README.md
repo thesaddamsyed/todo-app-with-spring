@@ -32,8 +32,8 @@ A simple Todo List web application built with Spring Boot, Thymeleaf, Spring Dat
 2. Configure your MySQL credentials in `src/main/resources/application.properties`:
    ```properties
    spring.datasource.url=jdbc:mysql://localhost:3306/todo-app
-   spring.datasource.username=root
-   spring.datasource.password=password
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
    ```
 3. Create the database if it doesn't exist:
    ```sql
