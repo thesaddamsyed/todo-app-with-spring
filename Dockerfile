@@ -18,14 +18,12 @@ USER appuser
 
 # App runtime configuration
 ENV JAVA_OPTS="-XX:MaxRAMPercentage=75.0 -XX:+UseG1GC"
-ENV SPRING_DATASOURCE_URL="jdbc:h2:file:/app/data/todo-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE"
+ENV SPRING_DATASOURCE_URL="jdbc:h2:mem:todo-app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE"
 
 # Copy the built jar from the builder stage
 COPY --from=builder /app/target/todo-0.0.1-SNAPSHOT.jar /app/app.jar
 
-# Create a directory for the embedded H2 file database and mark as a volume
-RUN mkdir -p /app/data
-VOLUME ["/app/data"]
+# No persistent volume needed on Render free; using in-memory H2 by default
 
 # Expose default Spring Boot port
 EXPOSE 8080
