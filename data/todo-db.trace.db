@@ -1,0 +1,24 @@
+2025-09-03 18:28:15.232847+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-09-03 18:28:18.981660+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-09-03 18:28:46.572368+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-09-03 18:30:56.245839+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-09-03 18:31:39.864082+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-09-03 18:31:44.898141+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-09-03 18:31:49.896492+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-09-03 18:35:02.837540+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TASK" already exists; SQL statement:
+create global temporary table HTE_task(completed boolean, rn_ integer not null, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]

@@ -15,7 +15,7 @@ import com.embarkx.todo.services.TaskService;
 @Controller
 public class TaskController {
 
-    public final TaskService taskService; 
+    public final TaskService taskService;
 
     public TaskController(TaskService taskService) {
         this.taskService = taskService;
@@ -25,7 +25,10 @@ public class TaskController {
     public String getTasks(Model model) {
         List<Task> tasks = taskService.getAllTasks();
         model.addAttribute("tasks", tasks);
-        
+        int totalCount = tasks.size();
+        long doneCount = tasks.stream().filter(Task::isCompleted).count();
+        model.addAttribute("totalCount", totalCount);
+        model.addAttribute("doneCount", doneCount);
         return "tasks";
     }
 
@@ -35,14 +38,14 @@ public class TaskController {
         return "redirect:/";
     }
 
-    //deleting a task
+    // deleting a task
     @GetMapping("/{id}/delete")
     public String deleteTask(@PathVariable Long id) {
         taskService.deleteTask(id);
         return "redirect:/";
     }
 
-    //Toggling a task complete status
+    // Toggling a task complete status
     @GetMapping("/{id}/toggle")
     public String toggleTask(@PathVariable Long id) {
         taskService.toggleTask(id);
